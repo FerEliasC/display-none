@@ -1,0 +1,95 @@
+<!-- componente-b.component.html -->
+<div class="cont-table" *ngIf="selectedRow">
+  <table class="table table-striped rounded table-hover">
+    <thead>
+      <tr>
+        <th  scope="col">No O.C</th>
+        <th  scope="col">Proveedor</th>
+        <th  scope="col">Fecha</th>
+        <th  scope="col">Total</th>
+        <th  scope="col">Estatus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="none">{{ selectedRow.oc }}</td>
+        <td class="none">{{ selectedRow.proveedor }}</td>
+        <td class="none">{{ selectedRow.fecha }}</td>
+        <td class="none">{{ selectedRow.total }}</td>
+        <td class="none">{{ selectedRow.estatus }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="cont-table" *ngIf="selectedRow; else noSelection">
+  <div class="cont-mensaje"><h2>Detalles de O.C:</h2></div>
+  <!-- Tu tabla de detalles aquí -->
+  <table class="table table-striped rounded table-hover" *ngIf="detalles.length > 0; else noDetails">
+    <thead>
+      <tr>
+        <th>Línea</th>
+        <th>Descripción</th>
+        <th>Cantidad</th>
+        <th>Unidad</th>
+        <th>Precio</th>
+        <th>Importe</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let detalle of detalles" (click)="onDetalleRowClick(detalle)">
+        <td class="none"><a href="">{{ detalle.linea }}</a></td>
+        <td class="none"><a href="">{{ detalle.descripcion }}</a></td>
+        <td class="none"><a href="">{{ detalle.cantidad }}</a></td>
+        <td class="none"><a href="">{{ detalle.unidad }}</a></td>
+        <td class="none"><a href="">{{ detalle.precio }}</a></td>
+        <td class="none"><a href="">{{ detalle.importe }}</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template class="mensaje" #noDetails></ng-template>
+</div>
+<ng-template class="mensaje error" #noSelection></ng-template>
+
+<!-- Aquí comienza tu nueva tabla de entradas -->
+<div *ngIf="entradas.length > 0; else noEntradas">
+  <table class="table table-striped rounded table-hover">
+    <thead>
+      <tr>
+        <th>Clave</th>
+        <th>No. entrada</th>
+        <th>Referencia</th>
+        <th>Fecha de registro</th>
+        <th>Importe</th>
+        <th>Estatus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entrada of entradas" (click)="onEntradaClick(entrada)">
+        <td>{{ entrada.clave }}</td>
+        <td>{{ entrada.noentrada }}</td>
+        <td>{{ entrada.referencia }}</td>
+        <td>{{ entrada.fecha }}</td>
+        <td>{{ entrada.importe }}</td>
+        <td>{{ entrada.estatus }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<ng-template class="mensaje error" #noEntradas></ng-template>
+
+<div class="element-menu">
+  <a class="button-menu" href="#">entradas</a>
+  <a class="button-menu" href="#">entradas en linea</a>
+</div>
+
+
+
+
+
+
+
+

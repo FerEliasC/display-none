@@ -1,0 +1,270 @@
+/*--------------------Filtro--------------------*/
+.cont-form {
+    display: flex;
+  }
+  
+  .cont-filter {
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.47);
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .cont-filtro {
+    display: flex;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .label-calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .asignar {
+    display: flex;
+  }
+  
+  .search {
+    border: none;
+    border-radius: 15px;
+    height: 38px;
+    width: 300px;
+    margin-right: 10px;
+    background-color: #abd8de3d;
+  }
+  
+  .search:active {
+    border: solid 1px #000;
+  }
+  
+  .button-2 {
+    border-radius: 15px;
+    border: solid 1px #000;
+    border-left: none;
+    width: 100px;
+    background-color: #00161F;
+    color: #ABD8DE;
+  }
+  
+  .button-2:hover {
+    background-color: #87B4B9;
+    color: #00161F;
+  }
+  
+  .btn-opciones {
+    border: 1px solid #00161F;
+  }
+
+  .cont-comprobante {
+    padding: 3px;
+    border-radius: 15px;
+  }
+ 
+ .cont-comprobante p {
+    margin-top: 10px;
+    margin-right: 10px;
+ }
+
+ .cont-button {
+    display: flex;
+ }
+
+ .cont-estatus {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #00161F;
+    width: 250px;
+    padding-top: 1px;
+    border-radius: 15px;
+    margin-right: 27px;
+ }
+
+ .button-filtro {
+    height: 40px;
+    padding: 3px;
+    border-radius: 15px;
+    background-color: #87B4B9;
+    color: #00161F;
+    border: none
+    ;
+ }
+
+ .button-filtro:hover {
+    background-color: #00161F;
+    color: #ABD8DE;
+ }
+
+ .button-action {
+    border: none;
+    background-color: #00161F;
+    color: #ABD8DE;
+    border-radius: 15px;
+ }
+
+ .button-action:hover {
+    background-color: #87B4B9;
+    color: #00161F;
+ }
+
+ /*--------------------Tabla--------------------*/
+
+ .cont-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    margin: 0 auto;
+ }
+
+ th {
+    text-align: center;
+    background-color: #00161F;
+    color: #ABD8DE;
+    border: 1px solid #ABD8DE;
+ }
+
+ td {
+    border: solid 1px #f1f6f8;
+    background-color: #bee2e6 
+ }
+
+ 
+ /*download*/
+.download {
+    background-color: #00161F;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.download-1 {
+  background-color: #00161F;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.download-1:hover {
+  background-color: #7eafb6;
+}
+
+ .custom-input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.custom-input-label {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/*Card sobrepuesto*/
+.sobrepuesto {
+  position: fixed;
+  margin-top: -180px;
+  margin-left: 65.3%;
+  width: 33.9%;
+  background-color: #bee2e6dc;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.47);
+}
+
+.detalle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: #16bd77c4;
+  border-radius: 15px 15px 0 0;
+}
+
+.titular{
+  margin-left: 5px;
+}
+
+.detalle p {
+  margin-top: 7px;
+}
+
+.oc-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.oc-2 {
+  display: flex;
+  width: 100%;
+}
+
+.info1{
+  width: 50%;
+  margin: 10px;
+}
+
+.info2 {
+  width: 50%;
+  margin: 10px;
+}
+
+.list-group li {
+  display: flex;
+  background-color: #ABD8DE;
+  height: 35px;
+}
+
+.list-group li p {
+  margin-left: 10px;
+}
+
+.oc-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.download {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.download label input {
+  margin-left: 10px;
+}
+
+.download:hover{
+  background-color: #7eafb6;
+  color: #00161F;
+}
+
+.cp {
+  display: flex;
+  align-items: center;
+}
+
